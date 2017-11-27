@@ -16,7 +16,13 @@
 // });
 // home
 Route::get('/', 'StaticPagesController@home')->name('home');
+Route::get('/home' ,function(){
+	$articles = App\Article::all();
+	return view('markhome',compact('articles'));
+})->name('markhome');
 // albums source
 Route::resource('albums','AlbumsController');
 // photos source
 Route::resource('photos','PhotosController');
+
+Route::resource('articles','ArticlesController');
