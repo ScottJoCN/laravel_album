@@ -26,3 +26,4 @@ Route::resource('albums','AlbumsController');
 Route::resource('photos','PhotosController');
 
 Route::resource('articles','ArticlesController');
+Route::post('markdown','ArticlesController@markdown')->name('markdown');

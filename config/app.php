@@ -144,8 +144,10 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        // add Image module
         Intervention\Image\ImageServiceProvider::class,
+        // add Markdown module
+        GrahamCampbell\Markdown\MarkdownServiceProvider::class,
     ],
 
     /*
@@ -194,6 +196,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
         'Image'     => Intervention\Image\Facades\Image::class,
+        'Markdown'     => GrahamCampbell\Markdown\Facades\Markdown::class,
 
     ],
 
