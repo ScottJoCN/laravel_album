@@ -148,6 +148,8 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         // add Markdown module
         GrahamCampbell\Markdown\MarkdownServiceProvider::class,
+        // Captcha valid code
+        Mews\Captcha\CaptchaServiceProvider::class,
     ],
 
     /*
